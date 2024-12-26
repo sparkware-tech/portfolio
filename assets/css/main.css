@@ -468,7 +468,7 @@ h6 {
 }
 
 .footer .footer-top {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 10%);
 }
 
@@ -606,7 +606,7 @@ h6 {
 }
 
 .footer .copyright {
-  padding: 30px 0;
+  padding: 0px 0 30px 0;
 }
 
 .footer .copyright p {

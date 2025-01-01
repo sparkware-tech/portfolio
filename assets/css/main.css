@@ -1165,15 +1165,12 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
-}
-
-.portfolio .portfolio-item  {
   transition: transform 0.3s ease;
   display: block;
 }
 
 .portfolio .portfolio-item:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .portfolio .portfolio-item h4 {

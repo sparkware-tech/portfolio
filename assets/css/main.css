@@ -1167,6 +1167,7 @@ section,
   overflow: hidden;
   transition: transform 0.3s ease;
   display: block;
+  cursor: pointer;
 }
 
 .portfolio .portfolio-item:hover {
@@ -1680,3 +1681,5 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+

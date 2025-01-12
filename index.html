@@ -27,6 +27,39 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      .swiper {
+        width: 100%;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+      }
+
+      .swiper-slide img {
+        width: 500px;
+        height: 260px;
+        border-radius: 5px;
+      }
+
+      .swiper-slide h2 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        padding: 15px 0 0 0;
+      }
+
+      .swiper-slide p {
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body class="index-page">
@@ -407,94 +440,37 @@
           <p>Check our Portfolio</p>
         </div>
         <!-- End Section Title -->
-
-        <div class="container">
-          <div
-            class="isotope-layout"
-            data-layout="masonry"
-            data-sort="original-order">
-
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-              <!-- Portfolio Item 1 -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item"
-                data-bs-toggle="modal"
-                data-bs-target="#portfolioModal"
-                data-title="Portfolio Website - CYAN Creations"
-                data-description="Description for portfolio item 1."
-                data-image="assets/img/masonry-portfolio/masonry-portfolio-2.jpg">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="" />
-                <h4>Portfolio Website - CYAN Creations</h4>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <!-- Portfolio Item 2 -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item"
-                data-bs-toggle="modal"
-                data-bs-target="#portfolioModal"
-                data-title="Website - Travel Lanka"
-                data-description="Description for portfolio item 2."
-                data-image="assets/img/masonry-portfolio/masonry-portfolio-2.jpg">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="" />
-                <h4>Website - Travel Lanka</h4>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <!-- Portfolio Item 3 -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item"
-                data-bs-toggle="modal"
-                data-bs-target="#portfolioModal"
-                data-title="Portfolio Website - Personal"
-                data-description="Description for portfolio item 2."
-                data-image="assets/img/masonry-portfolio/masonry-portfolio-2.jpg">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="" />
-                <h4>Portfolio Website - Personal</h4>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <!-- Portfolio Item 4 -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item"
-                data-bs-toggle="modal"
-                data-bs-target="#portfolioModal"
-                data-title="Portfolio Website - Personal"
-                data-description="Description for portfolio item 2."
-                data-image="assets/img/masonry-portfolio/masonry-portfolio-2.jpg">
-                <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="" />
-                <h4>Temperature Controller Unit</h4>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="portfolioModal"
-                tabindex="-1"
-                aria-labelledby="portfolioModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="portfolioModalLabel">Portfolio Title</h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <img id="modalImage" src="" class="img-fluid mb-3" alt="" />
-                      <p id="modalDescription">Portfolio description will go here.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/cyan.png" />
+              <h2>Portfolio Website - CYAN Creations</h2>
+              <p>
+                cyan is a grapic designcyan is a grapic designcyan is a grapic designcyan is a grapic
+                designcyan is a grapic designcyan is a grapic designcyan is a grapic designcyan is a grapic
+                design
+              </p>
             </div>
 
-            <!-- End Portfolio Container -->
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/travel1.png" />
+              <h2>Website - Travel Lanka</h2>
+              <p>
+                A responsive travel website offering holiday packages and tours, where customers can explore
+                options and make online reservations seamlessly.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/embedded1.png" />
+              <h2>Temperature Controller Unit</h2>
+              <p>
+                This unit is designed to maintain temperature at the desired level by automatically turning on
+                and off the water motor. It is specifically designed for mushroom huts.
+              </p>
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <!-- /Portfolio Section -->
@@ -723,6 +699,30 @@
         modalTitle.textContent = title;
         modalImage.src = image;
         modalDescription.textContent = description;
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        initialSlide: 1,
+        coverflowEffect: {
+          rotate: 60,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
       });
     </script>
   </body>

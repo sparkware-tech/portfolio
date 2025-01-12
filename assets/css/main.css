@@ -1030,6 +1030,7 @@ section,
   justify-content: center;
   margin-bottom: 20px;
   transition: 0.3s;
+  padding: 10px;
 }
 
 .services .service-item .icon i {

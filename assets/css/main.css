@@ -856,10 +856,6 @@ section,
   letter-spacing: 3px;
 }
 
-.hero h2 span {
-  color: var(--accent-color);
-}
-
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
@@ -1233,7 +1229,7 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
 }
 

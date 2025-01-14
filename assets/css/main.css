@@ -811,6 +811,18 @@ section,
   justify-content: center;
 }
 
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
 .hero img {
   position: absolute;
   inset: 0;
@@ -819,6 +831,8 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  animation: zoomInOut 10s ease-in-out infinite; /* Animation duration and infinite loop */
+  transition: transform 0.5s ease-in-out;
 }
 
 .hero:before {
@@ -850,46 +864,6 @@ section,
   margin: 10px 0 0 0;
   font-size: 24px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.hero .icon-box {
-  padding: 30px 20px;
-  transition: ease-in-out 0.3s;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero .icon-box i {
-  font-size: 32px;
-  line-height: 1;
-  color: var(--accent-color);
-}
-
-.hero .icon-box h3 {
-  font-weight: 700;
-  margin: 10px 0 0 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.hero .icon-box h3 a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  transition: ease-in-out 0.3s;
-}
-
-.hero .icon-box:hover {
-  border-color: var(--accent-color);
-}
-
-.hero .icon-box:hover h3 a {
-  color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -1055,7 +1029,6 @@ section,
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
-
 
 /*--------------------------------------------------------------
 # Vision and mission Section

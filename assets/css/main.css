@@ -1104,9 +1104,9 @@ section,
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--accent-color);
+  background: #133a7d;
   color: white;
-  border: 2px solid var(--accent-color);
+  border: 2px solid #133a7d;
 }
 
 /*--------------------------------------------------------------
@@ -1403,7 +1403,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
- background-image: linear-gradient(to right, #0e799d, #22b3e4); 
+  background-image: linear-gradient(to right, #3e70c6, #133a7d);
 }
 
 .contact .description p {
@@ -1413,14 +1413,13 @@ section,
   color: black;
 }
 
-
 .contact .info-item + .info-item {
   margin-top: 40px;
 }
 
 .contact .info-item i {
   color: white;
-  background: var(--accent-color);
+  background: #133a7d;
   font-size: 20px;
   width: 44px;
   height: 44px;
@@ -1439,11 +1438,15 @@ section,
   margin-bottom: 5px;
 }
 
-.contact .info-item p {
+.contact .info-item p a{
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
-  color: white;
+  color: #133a7d;
+}
+
+.contact .info-item p a:hover {
+  color: color-mix(in srgb, #133a7d, transparent 20%);
 }
 
 .contact .php-email-form {
@@ -1476,7 +1479,7 @@ section,
 
 .contact .php-email-form button[type="submit"] {
   color: white;
-  background: var(--accent-color);
+  background: #133a7d;
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1484,7 +1487,7 @@ section,
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, #133a7d, transparent 20%);
 }
 
 /*--------------------------------------------------------------

@@ -1402,6 +1402,9 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact {
+ background-image: linear-gradient(to right, #0e799d, #22b3e4); 
+}
 
 .contact .info-item + .info-item {
   margin-top: 40px;
@@ -1432,6 +1435,7 @@ section,
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  color: white;
 }
 
 .contact .php-email-form {

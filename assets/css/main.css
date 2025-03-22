@@ -104,7 +104,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: #133a7d;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -113,7 +113,7 @@ h6 {
 
 .php-email-form .loading {
   display: none;
-  background: var(--surface-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -127,7 +127,7 @@ h6 {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
+  border-top-color: #2b67cd;
   animation: php-email-form-loading 1s linear infinite;
 }
 

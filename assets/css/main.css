@@ -1727,13 +1727,14 @@ section,
 }
 
 .portfolio .swiper-slide h2 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-weight: 700;
   padding: 15px 0 0 0;
 }
 
 .portfolio .swiper-slide p {
+  font-size: 14px;
   text-align: center;
   padding: 5px 5px 5px 5px;
 }

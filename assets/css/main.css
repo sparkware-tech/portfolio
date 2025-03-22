@@ -104,7 +104,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: #133a7d;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -113,7 +113,7 @@ h6 {
 
 .php-email-form .loading {
   display: none;
-  background: var(--surface-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -127,7 +127,7 @@ h6 {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
+  border-top-color: #2b67cd;
   animation: php-email-form-loading 1s linear infinite;
 }
 
@@ -859,6 +859,10 @@ section,
   font-weight: 700;
 }
 
+.about .content p {
+  text-align: justify;
+}
+
 .about .content .fst-italic {
   color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
 }
@@ -1403,7 +1407,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background-image: linear-gradient(to right, #3e70c6, #133a7d);
+  background-image: linear-gradient(to right, #8cafeb, #133a7d);
 }
 
 .contact .description p {
@@ -1438,7 +1442,7 @@ section,
   margin-bottom: 5px;
 }
 
-.contact .info-item p a{
+.contact .info-item p a {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -1727,13 +1731,14 @@ section,
 }
 
 .portfolio .swiper-slide h2 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-weight: 700;
   padding: 15px 0 0 0;
 }
 
 .portfolio .swiper-slide p {
+  font-size: 14px;
   text-align: center;
   padding: 5px 5px 5px 5px;
 }

@@ -859,6 +859,10 @@ section,
   font-weight: 700;
 }
 
+.about .content p {
+  text-align: justify;
+}
+
 .about .content .fst-italic {
   color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
 }
@@ -1438,7 +1442,7 @@ section,
   margin-bottom: 5px;
 }
 
-.contact .info-item p a{
+.contact .info-item p a {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;

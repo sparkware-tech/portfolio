@@ -1,6 +1,6 @@
 # portfolio
 
-This is the portfolio of Sparkware
+This is the portfolio of Sparkware.
 
 The website is live on : https://sparkware-tech.github.io/portfolio/index.html
 
